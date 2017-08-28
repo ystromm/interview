@@ -1,4 +1,4 @@
-package com.github.ystromm.interview.json;
+package com.github.ystromm.jubilant_octo_pancake.json;
 
 public class MediumDTO {
     private final String location;

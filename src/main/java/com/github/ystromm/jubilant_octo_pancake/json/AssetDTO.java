@@ -1,4 +1,4 @@
-package com.github.ystromm.interview.json;
+package com.github.ystromm.jubilant_octo_pancake.json;
 
 import java.util.Collection;
 

@@ -1,11 +1,11 @@
-package com.github.ystromm.interview.mapping;
+package com.github.ystromm.jubilant_octo_pancake.mapping;
 
-import com.github.ystromm.interview.domain.Asset;
-import com.github.ystromm.interview.domain.Localized;
-import com.github.ystromm.interview.domain.Medium;
-import com.github.ystromm.interview.json.AssetDTO;
-import com.github.ystromm.interview.json.LocalizedDTO;
-import com.github.ystromm.interview.json.MediumDTO;
+import com.github.ystromm.jubilant_octo_pancake.domain.Asset;
+import com.github.ystromm.jubilant_octo_pancake.domain.Localized;
+import com.github.ystromm.jubilant_octo_pancake.domain.Medium;
+import com.github.ystromm.jubilant_octo_pancake.json.AssetDTO;
+import com.github.ystromm.jubilant_octo_pancake.json.LocalizedDTO;
+import com.github.ystromm.jubilant_octo_pancake.json.MediumDTO;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 

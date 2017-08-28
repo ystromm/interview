@@ -1,4 +1,4 @@
-package com.github.ystromm.interview.domain;
+package com.github.ystromm.jubilant_octo_pancake.domain;
 
 import java.util.Collection;
 import java.util.Date;
