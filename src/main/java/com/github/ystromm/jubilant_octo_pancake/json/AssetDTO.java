@@ -5,12 +5,12 @@ import java.util.Collection;
 public class AssetDTO {
     private final String id;
     private final Collection<LocalizedDTO> localizeds;
-    private final Collection<MediumDTO> media;
+    private final Collection<VideoDTO> videos;
 
-    public AssetDTO(String id, Collection<LocalizedDTO> localizeds, Collection<MediumDTO> media) {
+    public AssetDTO(String id, Collection<LocalizedDTO> localizeds, Collection<VideoDTO> videos) {
         this.id = id;
         this.localizeds = localizeds;
-        this.media = media;
+        this.videos = videos;
     }
 
     public String getId() {
@@ -21,7 +21,7 @@ public class AssetDTO {
         return localizeds;
     }
 
-    public Collection<MediumDTO> getMedia() {
-        return media;
+    public Collection<VideoDTO> getVideos() {
+        return videos;
     }
 }

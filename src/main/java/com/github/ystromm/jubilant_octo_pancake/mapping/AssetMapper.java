@@ -2,10 +2,10 @@ package com.github.ystromm.jubilant_octo_pancake.mapping;
 
 import com.github.ystromm.jubilant_octo_pancake.domain.Asset;
 import com.github.ystromm.jubilant_octo_pancake.domain.Localized;
-import com.github.ystromm.jubilant_octo_pancake.domain.Medium;
+import com.github.ystromm.jubilant_octo_pancake.domain.Video;
 import com.github.ystromm.jubilant_octo_pancake.json.AssetDTO;
 import com.github.ystromm.jubilant_octo_pancake.json.LocalizedDTO;
-import com.github.ystromm.jubilant_octo_pancake.json.MediumDTO;
+import com.github.ystromm.jubilant_octo_pancake.json.VideoDTO;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
@@ -17,14 +17,14 @@ public class AssetMapper {
 
     public static Asset of(AssetDTO assetDTO) {
 
-        final Collection<Medium> media;
-        if (assetDTO.getMedia() != null) {
-            media = Lists.newArrayList();
-            for (MediumDTO medium : assetDTO.getMedia()) {
-                media.add(new Medium(medium.getLocation()));
+        final Collection<Video> videos;
+        if (assetDTO.getVideos() != null) {
+            videos = Lists.newArrayList();
+            for (VideoDTO videoDTO : assetDTO.getVideos()) {
+                videos.add(new Video(videoDTO.getLocation()));
             }
         } else {
-            media = null;
+            videos = null;
         }
         final Map<String, Localized> localizeds;
         if (assetDTO.getLocalizeds() != null) {
@@ -36,6 +36,6 @@ public class AssetMapper {
         else {
             localizeds = null;
         }
-        return new Asset(assetDTO.getId(), media, localizeds, new Date());
+        return new Asset(assetDTO.getId(), videos, localizeds, new Date());
     }
 }

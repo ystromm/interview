@@ -1,9 +1,9 @@
-package com.github.ystromm.jubilant_octo_pancake.domain;
+package com.github.ystromm.jubilant_octo_pancake.json;
 
-public class Medium {
+public class VideoDTO {
     private final String location;
 
-    public Medium(String location) {
+    public VideoDTO(String location) {
         this.location = location;
     }
 
