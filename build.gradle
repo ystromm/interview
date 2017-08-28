@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    provided group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
+    compile "com.google.guava:guava:19.0"
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-junit', version: '2.0.0.0'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}
