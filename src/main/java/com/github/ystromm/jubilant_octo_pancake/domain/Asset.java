@@ -6,13 +6,13 @@ import java.util.Map;
 
 public class Asset {
     private final String id;
-    private final Collection<Video> media;
+    private final Collection<Video> videos;
     private final Map<String, Localized> descriptions;
     private final Date changed;
 
     public Asset(String id, Collection<Video> medias, Map<String, Localized> descriptions, Date changed) {
         this.id = id;
-        this.media = medias;
+        this.videos = medias;
         this.descriptions = descriptions;
         this.changed = changed;
     }
@@ -21,8 +21,8 @@ public class Asset {
         return id;
     }
 
-    public Collection<Video> getMedia() {
-        return media;
+    public Collection<Video> getVideos() {
+        return videos;
     }
 
     public Map<String, Localized> getDescriptions() {
