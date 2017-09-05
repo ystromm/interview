@@ -21,7 +21,7 @@ public class AssetMapper {
         if (assetDTO.getVideos() != null) {
             videos = Lists.newArrayList();
             for (VideoDTO videoDTO : assetDTO.getVideos()) {
-                videos.add(new Video(videoDTO.getLocation()));
+                videos.add(new Video(videoDTO.getLocation(), changed));
             }
         } else {
             videos = null;
